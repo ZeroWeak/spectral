@@ -1,16 +1,16 @@
-id: 168
+id: 169
 user: eq19
-span: span-149
+span: span-150
 title: eQuantum
 baseurl: /spectral
 repository: ZeroWeak/spectral
-action: ZeroWeak/nthmc/actions/runs/15929020059
+action: ZeroWeak/algorithms/actions/runs/27887488692
 description: eQuantum Project - Zero Weak Boson
 
-#debug:
-#  dist: false
-#  compress: true
-#  shortcodes: true
+debug:
+  dist: false
+  compress: true
+  shortcodes: true
 
 lsi: false
 incremental: true
@@ -34,7 +34,6 @@ exclude:
   - Dockerfile
 
 plugins:
-  - jemoji
   - jekyll-gist
   - jekyll-avatar
   - jekyll-mentions
@@ -48,6 +47,6 @@ plugins:
   - jekyll-optional-front-matter
 
 track:
-  spin: [12, 11]
-  pinned: [maps, feed, lexer, parser, syntax, grammar, pysme, numqi, pyrate, nthmc, spectral, algorithms]
+  spin: [12, 12]
+  pinned: [maps, feed, lexer, parser, syntax, grammar, pysme, numqi, pyrate, nthmc, algorithms, spectral]
   organization: [Chetabahana, FeedMapping, GlobalZones, HybridModels, JunctionTerms, KernelPatterns, MappingSystem, NeuralSystem, ObjectModules, VirtualNetworks, WeakNegative, WeakPositive, ZeroWeak]
