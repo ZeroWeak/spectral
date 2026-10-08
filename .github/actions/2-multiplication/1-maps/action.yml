@@ -213,13 +213,6 @@ runs:
           gh run cancel $GITHUB_RUN_ID --repo "$REPO_NAME"
         fi
 
-    - name: Login to DockerHub
-      if: ${{ env.SKIP_REMAINING_STEPS != 'true' }}
-      uses: docker/login-action@v4
-      with:
-        username: ${{ inputs.hub_username }}
-        password: ${{ inputs.hub_token }}
-
     - name: 💎 Set ID Token
       if: ${{ env.SKIP_REMAINING_STEPS != 'true' }}
       uses: google-github-actions/auth@v3
